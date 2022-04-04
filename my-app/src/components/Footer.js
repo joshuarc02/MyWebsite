@@ -3,10 +3,8 @@ import {Tabs, Tab} from 'react-bootstrap/';
 
 function Footer() {
   return (
-      <footer>   
-        <Tabs defaultActiveKey="copyright" id="uncontrolled-tab-example" className="mb-3">
-            <Tab eventKey="copyright" title="Copyright &copy; Your Website 2020">
-            </Tab>
+      <footer style={{position: 'absolute', bottom:0}}>   
+        <Tabs>
             <Tab eventKey="contact" title="Contact">
             </Tab>
         </Tabs>
