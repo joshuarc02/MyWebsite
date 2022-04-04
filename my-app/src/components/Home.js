@@ -7,7 +7,7 @@ function Home() {
     <Container>
         <Image 
             fluid='true'
-            src="http://placehold.it/900x400"
+            src="https://media-exp1.licdn.com/dms/image/C4E03AQFQjySsxAbnZw/profile-displayphoto-shrink_400_400/0/1622406520434?e=1654732800&v=beta&t=dBzezt_OuyB_BgRNhIyzOWd6Bdo3ardPrAIFOIBQMOo"
             alt=""
         ></Image>
         <Card>

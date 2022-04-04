@@ -1,19 +1,28 @@
 import React from "react";
-import {Container, Navbar, Nav} from 'react-bootstrap/';
+import {Container, Navbar, Nav, Offcanvas} from 'react-bootstrap/';
 export default Header;
 
 function Header() {
   return (
-    <Navbar bg="light" expand="lg">
-    <Container>
-      <Navbar.Brand href="#home">Joshua Clark</Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav>
-          <Nav.Link href="#home">Home</Nav.Link>
-        </Nav>
-      </Navbar.Collapse>
-    </Container>
-  </Navbar>
+    <Navbar expand={false}>
+        <Container fluid>
+        <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
+        <Navbar.Toggle aria-controls="offcanvasNavbar" />
+        <Navbar.Offcanvas
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+            placement="end"
+        >
+            <Offcanvas.Header closeButton>
+            <Offcanvas.Title id="offcanvasNavbarLabel">Offcanvas</Offcanvas.Title>
+            </Offcanvas.Header>
+            <Offcanvas.Body>
+            <Nav className="justify-content-end flex-grow-1 pe-3">
+                <Nav.Link href="">Home</Nav.Link>
+            </Nav>
+            </Offcanvas.Body>
+        </Navbar.Offcanvas>
+        </Container>
+    </Navbar>
   );
 }
