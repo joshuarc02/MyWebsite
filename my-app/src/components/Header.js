@@ -1,12 +1,11 @@
 import React from "react";
 import {Container, Navbar, Nav, Offcanvas} from 'react-bootstrap/';
-export default Header;
 
 function Header() {
   return (
     <Navbar expand={false}>
         <Container fluid>
-        <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
+        <Navbar.Brand href="/">Joshua Clark</Navbar.Brand>
         <Navbar.Toggle aria-controls="offcanvasNavbar" />
         <Navbar.Offcanvas
             id="offcanvasNavbar"
@@ -19,6 +18,7 @@ function Header() {
             <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">
                 <Nav.Link href="">Home</Nav.Link>
+                <Nav.Link href="/tictactoe">Tictactoe</Nav.Link>
             </Nav>
             </Offcanvas.Body>
         </Navbar.Offcanvas>
@@ -26,3 +26,6 @@ function Header() {
     </Navbar>
   );
 }
+
+
+export default Header;

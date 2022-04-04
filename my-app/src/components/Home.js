@@ -1,6 +1,5 @@
 import React from "react";
 import {Image, Card, Container} from 'react-bootstrap/';
-export default Home;
 
 function Home() {
   return (
@@ -25,3 +24,5 @@ function Home() {
     </Container>
   );
 }
+
+export default Home;

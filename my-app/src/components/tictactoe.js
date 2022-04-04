@@ -1,5 +1,4 @@
 import * as React from 'react';
-import './tictactoe.scss'
 import Button from 'react-bootstrap/Button';
 import ListGroup from 'react-bootstrap/ListGroup';
 
@@ -140,9 +139,5 @@ function calculateWinner(squares) {
     return null;
   }
 
-function render(){
-    ReactDOM.render(
-        <Game />,
-        document.getElementById('root')
-    );
-}
+  
+export default Game;

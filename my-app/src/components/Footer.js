@@ -1,6 +1,5 @@
 import React from "react";
 import {Tabs, Tab} from 'react-bootstrap/';
-export default Footer;
 
 function Footer() {
   return (
@@ -14,3 +13,5 @@ function Footer() {
       </footer>
   );
 }
+
+export default Footer;
