@@ -1,19 +1,22 @@
 import React from "react";
-import {Carousel, Container, Row, Col, Card} from 'react-bootstrap/';
+import {Carousel, Container, Row, Col, Card, Image} from 'react-bootstrap/';
 import {TictactoeCard} from './Cards';
 
 function Home() {
   return (
     <Container>
-      <h1>Hey, I'm Josh!</h1>
+      <h1 className="text-center">Hey, I'm Josh!</h1>
       <Row>
         <Col>
           <Card className="border-primary">
-          <Card.Header>About me</Card.Header>
+            <Card.Header>About me</Card.Header>
             <Card.Body>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </Card.Body>
           </Card>
+        </Col>
+        <Col>
+          <Image fluid rounded src={require("./images/me_and_dog.jpg")}/>
         </Col>
         <Col>
           <Card className="border-primary">
